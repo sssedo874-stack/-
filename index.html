@@ -1,202 +1,429 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة الأمل لصيانة وتنظيف الأفران بالرياض - خصم 30%</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts (Cairo) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%);
-        }
-    </style>
+<title>سيد محمد | التسويق الإلكتروني وتصميم المواقع وأرشفة جوجل</title>
 
-    <!-- TikTok Pixel Code Start -->
-    <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+<meta name="description" content="سيد محمد للتسويق الإلكتروني بالمنصورة. إعلانات ممولة، تصميم مواقع، إنشاء وتحسين خرائط جوجل، وأرشفة SEO. تواصل الآن.">
 
+<meta name="keywords" content="إعلانات ممولة المنصورة, تصميم مواقع المنصورة, خرائط جوجل, أرشفة SEO, تسويق إلكتروني">
 
-      ttq.load('DBDMUS3C77UB01VKJ9QG');
-      ttq.page();
-    }(window, document, 'ttq');
-    </script>
-    <!-- TikTok Pixel Code End -->
+<meta name="author" content="سيد محمد">
+
+<meta property="og:title" content="سيد محمد | حلول التسويق الرقمي">
+<meta property="og:description" content="إعلانات ممولة وتصميم مواقع وأرشفة SEO وخرائط جوجل.">
+<meta property="og:type" content="website">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#071426;
+color:#fff;
+line-height:1.9;
+}
+
+.container{
+width:90%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+padding:20px 0;
+background:#091a30;
+border-bottom:1px solid #1d3554;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+font-size:23px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav span{
+color:#cbd5e1;
+font-size:13px;
+}
+
+.hero{
+padding:85px 0 75px;
+text-align:center;
+background:
+radial-gradient(ellipse at top,#123d69 0%,transparent 65%),
+#071426;
+}
+
+.tag{
+display:inline-block;
+padding:7px 18px;
+border:1px solid #38bdf8;
+border-radius:30px;
+color:#7dd3fc;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:42px;
+line-height:1.5;
+margin-bottom:18px;
+}
+
+.hero h1 span{
+color:#38bdf8;
+}
+
+.hero p{
+max-width:750px;
+margin:auto;
+color:#cbd5e1;
+font-size:18px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:14px;
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:13px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.whatsapp{
+background:#16a34a;
+color:white;
+}
+
+.call{
+background:#0284c7;
+color:white;
+}
+
+section{
+padding:65px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:30px;
+margin-bottom:12px;
+}
+
+.section-desc{
+text-align:center;
+color:#94a3b8;
+margin-bottom:38px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.service{
+background:#10243e;
+border:1px solid #1e3a5c;
+padding:27px;
+border-radius:16px;
+transition:.3s;
+}
+
+.service:hover{
+border-color:#38bdf8;
+transform:translateY(-5px);
+}
+
+.service .icon{
+font-size:35px;
+margin-bottom:12px;
+}
+
+.service h3{
+font-size:21px;
+color:#7dd3fc;
+margin-bottom:10px;
+}
+
+.service p{
+color:#cbd5e1;
+font-size:15px;
+}
+
+.why{
+background:#0b1c32;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+}
+
+.feature{
+padding:20px;
+background:#10243e;
+border-radius:12px;
+border-right:3px solid #38bdf8;
+}
+
+.feature h3{
+font-size:17px;
+margin-bottom:5px;
+}
+
+.feature p{
+color:#94a3b8;
+font-size:14px;
+}
+
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#0c355b,#0b1c32);
+border-radius:20px;
+padding:45px 20px;
+border:1px solid #24527a;
+}
+
+.cta h2{
+font-size:30px;
+margin-bottom:12px;
+}
+
+.cta p{
+color:#cbd5e1;
+}
+
+footer{
+text-align:center;
+padding:25px 10px;
+color:#94a3b8;
+background:#06101f;
+font-size:14px;
+}
+
+@media(max-width:650px){
+.hero{
+padding:60px 0;
+}
+.hero h1{
+font-size:29px;
+}
+.hero p{
+font-size:15px;
+}
+.services,.features{
+grid-template-columns:1fr;
+}
+.section-title{
+font-size:25px;
+}
+.nav{
+flex-direction:column;
+}
+.btn{
+width:100%;
+max-width:290px;
+}
+}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- شريط العرض العلوي المتحرك -->
-    <div class="bg-orange-600 text-white py-2.5 px-4 text-center text-sm font-bold tracking-wide shadow-inner">
-        <span>🔥 عرض لفترة محدودة: خصم 30% على كافة خدمات الصيانة والتنظيف لأول 20 عميل فقط!</span>
-    </div>
+<body>
 
-    <!-- الهيدر الرئيسي -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3 space-x-reverse">
-                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md">
-                    <i class="fas fa-fire-flame-curved text-xl"></i>
-                </div>
-                <div>
-                    <h1 class="text-xl font-extrabold text-slate-900">شركة الأمل</h1>
-                    <p class="text-xs text-blue-600 font-semibold">صيانة وتنظيف الأفران بالرياض</p>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center space-x-4 space-x-reverse">
-                <a href="tel:0575799170" class="bg-slate-100 text-blue-800 border border-blue-200 px-4 py-2 rounded-xl font-bold hover:bg-slate-200 transition flex items-center">
-                    <i class="fas fa-phone-alt ml-2 text-orange-500"></i> 0575799170
-                </a>
-                <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20خصم%2030%25%20لصيانة%20وتنظيف%20الفرن" target="_blank" class="bg-orange-600 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg shadow-orange-600/20 hover:bg-orange-700 transition flex items-center">
-                    <i class="fab fa-whatsapp ml-2 text-lg"></i> احجز العرض الآن
-                </a>
-            </div>
-        </div>
-    </header>
+<header>
+<div class="container nav">
+<div class="logo">سيد محمد | التسويق الرقمي</div>
+<span>حلول رقمية لتنمية أعمالك</span>
+</div>
+</header>
 
-    <!-- قسم الواجهة الرئيسية (Hero Section) -->
-    <section class="hero-gradient text-white py-20 px-4 relative overflow-hidden">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="bg-orange-500 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-6 shadow-md border border-orange-400">
-                ⚡ خصم حصري 30% (متبقي عدد محدود للأول 20 عميل)
-            </span>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight text-white drop-shadow-md">
-                اعمل صيانة وتنظيف لفرنك وكأنه جديد تماماً!
-            </h2>
-            <p class="text-lg md:text-xl text-slate-100 mb-10 max-w-2xl mx-auto font-bold leading-relaxed">
-                فريق هندسي متخصص في صيانة أفران الغاز والكهرباء بالرياض مع إزالة تامة للدهون المستعصية وضمان شامل.
-            </p>
-            
-            <!-- أزرار التفاعل الرئيسية -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20خصم%2030%25%20لصيانة%20وتنظيف%20الفرن" target="_blank" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center text-lg">
-                    <i class="fab fa-whatsapp ml-2 text-2xl"></i> اطلب العرض عبر الواتساب
-                </a>
-                <a href="tel:0575799170" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 text-white font-bold px-8 py-4 rounded-2xl transition flex items-center justify-center text-lg">
-                    <i class="fas fa-phone-alt ml-2 text-orange-400"></i> اتصال مباشر: 0575799170
-                </a>
-            </div>
-        </div>
-    </section>
+<main>
 
-    <!-- قسم المميزات -->
-    <section class="py-16 max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-slate-900 mb-3">لماذا تختار شركة الأمل؟</h3>
-            <p class="text-slate-600 max-w-xl mx-auto">نلتزم بأعلى معايير الجودة والأمان في كافة أعمال الصيانة المنزلية.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- ميزة 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition">
-                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
-                    <i class="fas fa-screwdriver-wrench"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3 text-slate-900">صيانة دقيقة وفورية</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">إصلاح أعطال الحرارة والشعلة وتغيير قطع الغيار التالفة بقطع أصلية ومضمونة.</p>
-            </div>
-            <!-- ميزة 2 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition">
-                <div class="w-16 h-16 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
-                    <i class="fas fa-sparkles"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3 text-slate-900">تنظيف إحترافي للدهون</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">إزالة الدهون والزيوت المتراكمة على الهيكل الخارجي والداخلي للفرن بمواد آمنة.</p>
-            </div>
-            <!-- ميزة 3 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center hover:shadow-md transition">
-                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
-                    <i class="fas fa-award"></i>
-                </div>
-                <h4 class="text-xl font-bold mb-3 text-slate-900">ضمان معتمد</h4>
-                <p class="text-slate-600 text-sm leading-relaxed">نمنحك ضماناً حقيقياً على خدمات الصيانة لضمان أداء مثالي لفرنك لفترات طويلة.</p>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+<div class="container">
 
-    <!-- قسم الخدمات -->
-    <section class="bg-white py-16 border-y border-slate-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold text-slate-900 mb-3">خدماتنا الشاملة بالرياض</h3>
-                <p class="text-slate-600">نصلك أينما كنت في جميع أحياء الرياض بسرعة وسهولة.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200/60">
-                    <i class="fas fa-check-circle text-blue-600 mb-3 text-xl"></i>
-                    <h5 class="font-bold text-lg mb-2 text-slate-900">صيانة أفران الغاز والكهرباء</h5>
-                    <p class="text-xs text-slate-600">إصلاح شامل لمشاكل الإشعال والحرارة.</p>
-                </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200/60">
-                    <i class="fas fa-check-circle text-orange-600 mb-3 text-xl"></i>
-                    <h5 class="font-bold text-lg mb-2 text-slate-900">تنظيف وإزالة الدهون</h5>
-                    <p class="text-xs text-slate-600">تنظيف عميق يعيد رونق الفرن كالجديد.</p>
-                </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200/60">
-                    <i class="fas fa-check-circle text-blue-600 mb-3 text-xl"></i>
-                    <h5 class="font-bold text-lg mb-2 text-slate-900">تغيير قطع الغيار</h5>
-                    <p class="text-xs text-slate-600">مفاتيح، ثرموستات، وزجاج بوابات.</p>
-                </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200/60">
-                    <i class="fas fa-check-circle text-orange-600 mb-3 text-xl"></i>
-                    <h5 class="font-bold text-lg mb-2 text-slate-900">عقود صيانة دورية</h5>
-                    <p class="text-xs text-slate-600">للمنازل، الفلل، والمطاعم بالرياض.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="tag">التسويق الإلكتروني والحلول الرقمية</div>
 
-    <!-- قسم الدعوة النهائية للعمل (CTA Banner) -->
-    <section class="py-16 px-4 max-w-5xl mx-auto">
-        <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden border border-slate-800">
-            <div class="relative z-10">
-                <span class="text-orange-400 font-bold text-sm uppercase tracking-wider mb-2 block">احجز الآن وستفيد من خصم 30%</span>
-                <h3 class="text-3xl md:text-4xl font-black mb-4">هل تبحث عن فني محترف لإصلاح فرنك؟</h3>
-                <p class="text-slate-300 mb-8 max-w-xl mx-auto">فريقنا جاهز لتلبية طلبك فوراً في الرياض. تواصل معنا الآن ولا تفوت الفرصة.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20خصم%2030%25%20لصيانة%20وتنظيف%20الفرن" target="_blank" class="bg-orange-600 hover:bg-orange-500 text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg transition flex items-center justify-center text-lg">
-                        <i class="fab fa-whatsapp ml-2 text-2xl"></i> تواصل عبر الواتساب الآن
-                    </a>
-                    <a href="tel:0575799170" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold px-8 py-4 rounded-2xl transition flex items-center justify-center text-lg">
-                        <i class="fas fa-phone-alt ml-2 text-orange-400"></i> اتصال: 0575799170
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<h1>
+خلّي مشروعك يظهر قدام عملائك<br>
+<span>وابدأ تكبر شغلك باحترافية!</span>
+</h1>
 
-    <!-- الفوتر -->
-    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-900 pb-24 md:pb-10">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="flex items-center justify-center space-x-3 space-x-reverse mb-4">
-                <div class="bg-blue-600 text-white p-2 rounded-lg">
-                    <i class="fas fa-fire-flame-curved"></i>
-                </div>
-                <h2 class="text-white font-bold text-lg">شركة الأمل</h2>
-            </div>
-            <p class="text-sm mb-4">خدمات صيانة وتنظيف الأفران باحترافية عالية في الرياض.</p>
-            <p class="text-xs text-slate-600">جميع الحقوق محفوظة لشركة الأمل © 2026</p>
-        </div>
-    </footer>
+<p>
+بنساعد أصحاب الشركات والمشاريع على بناء حضور قوي على الإنترنت
+من خلال الإعلانات الممولة، تصميم المواقع، خرائط جوجل،
+وأرشفة المواقع في محركات البحث.
+</p>
 
-    <!-- شريط ثابت أسفل الشاشة للجوال (Mobile Sticky Footer) -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3 shadow-2xl flex md:hidden gap-3 z-50">
-        <a href="tel:0575799170" class="flex-1 bg-slate-100 text-slate-800 border border-slate-300 font-bold py-3 rounded-xl flex items-center justify-center text-sm shadow-sm">
-            <i class="fas fa-phone-alt ml-2 text-orange-600"></i> اتصال مباشر
-        </a>
-        <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20الاستفادة%20من%20خصم%2030%25%20لصيانة%20وتنظيف%20الفرن" target="_blank" class="flex-1 bg-orange-600 text-white font-bold py-3 rounded-xl flex items-center justify-center text-sm shadow-md">
-            <i class="fab fa-whatsapp ml-2 text-lg"></i> احجز العرض
-        </a>
-    </div>
+<div class="buttons">
+<a class="btn whatsapp"
+href="https://wa.me/201093740921?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85"
+target="_blank" rel="noopener">
+تواصل واتساب الآن
+</a>
+
+<a class="btn call" href="tel:01093740921">
+اتصل بنا مباشرة
+</a>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+
+<h2 class="section-title">الخدمات اللي بنقدمها</h2>
+<p class="section-desc">
+كل اللي يحتاجه مشروعك عشان يبني وجود قوي على الإنترنت
+</p>
+
+<div class="services">
+
+<div class="service">
+<div class="icon">📢</div>
+<h3>الإعلانات الممولة</h3>
+<p>
+إدارة حملات إعلانية على تيك توك وفيسبوك،
+مع استهداف الجمهور المناسب لنشاطك وتحسين أداء الحملات
+لزيادة فرص الحصول على عملاء مهتمين.
+</p>
+</div>
+
+<div class="service">
+<div class="icon">🌐</div>
+<h3>تصميم المواقع الإلكترونية</h3>
+<p>
+تصميم مواقع احترافية وصفحات هبوط متوافقة مع
+الموبايل، تعرض خدماتك بشكل جذاب وتسهّل على
+العملاء التواصل معك.
+</p>
+</div>
+
+<div class="service">
+<div class="icon">📍</div>
+<h3>إنشاء وتحسين خرائط جوجل</h3>
+<p>
+إنشاء وإعداد ملف نشاطك التجاري على Google،
+وتحسين بيانات النشاط والخدمات لمساعدة العملاء
+على العثور عليك في نتائج البحث والخرائط.
+</p>
+</div>
+
+<div class="service">
+<div class="icon">📈</div>
+<h3>أرشفة المواقع SEO</h3>
+<p>
+تهيئة المواقع لمحركات البحث، وتحسين العناوين
+والوصف والكلمات المفتاحية والمحتوى،
+لمساعدة موقعك على الظهور في نتائج جوجل.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="why">
+<div class="container">
+
+<h2 class="section-title">ليه تختار خدماتنا؟</h2>
+<p class="section-desc">
+نهتم بجودة التنفيذ ووضوح خطوات العمل
+</p>
+
+<div class="features">
+
+<div class="feature">
+<h3>✔ تصميم احترافي</h3>
+<p>نهتم بتقديم شكل عصري يناسب هوية نشاطك التجاري.</p>
+</div>
+
+<div class="feature">
+<h3>✔ حلول مناسبة لنشاطك</h3>
+<p>نحدد الخدمة المناسبة حسب طبيعة مشروعك وأهدافك.</p>
+</div>
+
+<div class="feature">
+<h3>✔ سهولة التواصل</h3>
+<p>تواصل مباشر للاستفسار ومتابعة تفاصيل الخدمة.</p>
+</div>
+
+<div class="feature">
+<h3>✔ اهتمام بالتفاصيل</h3>
+<p>نعمل على تحسين تجربة العملاء وظهور نشاطك الرقمي.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta">
+
+<h2>جاهز تطور مشروعك؟ 🚀</h2>
+
+<p>
+ابدأ دلوقتي وخد أول خطوة نحو حضور رقمي أقوى
+ووصول أفضل للعملاء المهتمين بخدماتك.
+</p>
+
+<div class="buttons">
+<a class="btn whatsapp"
+href="https://wa.me/201093740921?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D8%B3%D9%88%D9%8A%D9%82%D9%8A%D8%A9"
+target="_blank" rel="noopener">
+اطلب خدمتك عبر واتساب
+</a>
+
+<a class="btn call" href="tel:01093740921">
+اتصل الآن
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>جميع الحقوق محفوظة © 2026 | سيد محمد للتسويق الرقمي</p>
+<p>إعلانات ممولة - تصميم مواقع - خرائط جوجل - SEO</p>
+</footer>
 
 </body>
 </html>
