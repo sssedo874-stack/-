@@ -12,11 +12,46 @@
 <!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{};ttq._o[e]=n||{};var s=d.createElement("script");s.type="text/javascript";s.async=!0;s.src=r+"?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a)};
+  w.TiktokAnalyticsObject=t;
+  var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){
+    t[e]=function(){
+      t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+    }
+  };
+  for(var i=0;i<ttq.methods.length;i++)
+    ttq.setAndDefer(ttq,ttq.methods[i]);
+
+  ttq.instance=function(t){
+    for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)
+      ttq.setAndDefer(e,ttq.methods[n]);
+    return e
+  };
+
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js",
+    o=n&&n.partner;
+    ttq._i=ttq._i||{};
+    ttq._i[e]=[];
+    ttq._i[e]._u=r;
+    ttq._t=ttq._t||{};
+    ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};
+    ttq._o[e]=n||{};
+
+    var s=d.createElement("script");
+    s.type="text/javascript";
+    s.async=true;
+    s.src=r+"?sdkid="+e+"&lib="+t;
+
+    var a=d.getElementsByTagName("script")[0];
+    a.parentNode.insertBefore(s,a)
+  };
 
   ttq.load('DC4A673C77U7FA4HEQC0');
   ttq.page();
+
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
@@ -249,17 +284,19 @@ footer {
 
 <div class="buttons">
 
-<a class="btn whatsapp"
+<a
+id="whatsappBtn"
+class="btn whatsapp"
 href="https://wa.me/966550718790?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1"
 target="_blank"
-rel="noopener"
-onclick="if(window.ttq) ttq.track('Contact')">
+rel="noopener">
 واتساب 💬
 </a>
 
-<a class="btn call"
-href="tel:+966550718790"
-onclick="if(window.ttq) ttq.track('Contact')">
+<a
+id="callBtn"
+class="btn call"
+href="tel:+966550718790">
 اتصل بنا الآن ☎
 </a>
 
@@ -281,6 +318,39 @@ onclick="if(window.ttq) ttq.track('Contact')">
 
 </div>
 </section>
+
+<!-- TikTok Contact Events -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // WhatsApp Contact Event
+    var whatsappBtn = document.getElementById("whatsappBtn");
+
+    whatsappBtn.addEventListener("click", function () {
+        if (window.ttq) {
+            window.ttq.track("Contact");
+        }
+    });
+
+    // Direct Call Contact Event
+    var callBtn = document.getElementById("callBtn");
+
+    callBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var phoneLink = this.href;
+
+        if (window.ttq) {
+            window.ttq.track("Contact");
+        }
+
+        setTimeout(function () {
+            window.location.href = phoneLink;
+        }, 700);
+    });
+
+});
+</script>
 
 </body>
 </html>
