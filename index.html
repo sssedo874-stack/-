@@ -4,10 +4,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#071a36">
+<meta name="theme-color" content="#07152d">
 
 <title>فولت | صيانة كهرباء المنازل</title>
-<meta name="description" content="فولت لصيانة كهرباء المنازل. خدمات كهربائية منزلية باحترافية واهتمام بالجودة والأمان. تواصل معنا الآن.">
+<meta name="description" content="فولت لصيانة كهرباء المنازل. إصلاح الأعطال الكهربائية وصيانة وتركيب الإضاءة والمفاتيح والأفياش. تواصل معنا الآن.">
+
+<!-- ============================== -->
+<!-- TikTok Pixel - HEADER -->
+<!-- ============================== -->
 
 <!-- TikTok Pixel Code Start -->
 <script>
@@ -42,7 +46,7 @@
 
     var s=d.createElement("script");
     s.type="text/javascript";
-    s.async=true;
+    s.async=!0;
     s.src=r+"?sdkid="+e+"&lib="+t;
 
     var a=d.getElementsByTagName("script")[0];
@@ -55,6 +59,46 @@
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
+
+<!-- Contact Events - HEADER -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var whatsappBtn = document.getElementById("whatsappBtn");
+    var callBtn = document.getElementById("callBtn");
+
+    // WhatsApp Contact Event
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener("click", function () {
+            if (window.ttq) {
+                window.ttq.track("Contact");
+            }
+        });
+    }
+
+    // Direct Call Contact Event
+    if (callBtn) {
+        callBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            var phoneLink = this.href;
+
+            if (window.ttq) {
+                window.ttq.track("Contact");
+            }
+
+            setTimeout(function () {
+                window.location.href = phoneLink;
+            }, 700);
+        });
+    }
+
+});
+</script>
+
+<!-- ============================== -->
+<!-- PAGE DESIGN CSS -->
+<!-- ============================== -->
 
 <style>
 * {
@@ -223,11 +267,20 @@ footer {
 }
 
 @media(max-width:400px) {
-    h1 {font-size: 25px;}
-    .brand {font-size: 36px;}
-    .service {font-size: 13px;}
+    h1 {
+        font-size: 25px;
+    }
+
+    .brand {
+        font-size: 36px;
+    }
+
+    .service {
+        font-size: 13px;
+    }
 }
 </style>
+
 </head>
 
 <body>
@@ -289,7 +342,7 @@ id="whatsappBtn"
 class="btn whatsapp"
 href="https://wa.me/966550718790?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1"
 target="_blank"
-rel="noopener">
+rel="noopener noreferrer">
 واتساب 💬
 </a>
 
@@ -318,39 +371,6 @@ href="tel:+966550718790">
 
 </div>
 </section>
-
-<!-- TikTok Contact Events -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    // WhatsApp Contact Event
-    var whatsappBtn = document.getElementById("whatsappBtn");
-
-    whatsappBtn.addEventListener("click", function () {
-        if (window.ttq) {
-            window.ttq.track("Contact");
-        }
-    });
-
-    // Direct Call Contact Event
-    var callBtn = document.getElementById("callBtn");
-
-    callBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        var phoneLink = this.href;
-
-        if (window.ttq) {
-            window.ttq.track("Contact");
-        }
-
-        setTimeout(function () {
-            window.location.href = phoneLink;
-        }, 700);
-    });
-
-});
-</script>
 
 </body>
 </html>
