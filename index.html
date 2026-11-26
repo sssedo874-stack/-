@@ -1,305 +1,317 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sayed Mohamed | ديجيتال ماركتنج وتصميم مواقع</title>
-<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071a36">
+
+<title>فولت | صيانة كهرباء المنازل</title>
+<meta name="description" content="فولت لصيانة كهرباء المنازل. خدمات كهربائية منزلية باحترافية واهتمام بالجودة والأمان. تواصل معنا الآن.">
+
 <style>
-:root{--bg:#090614;--card:#150F2B;--line:#2A2050;--ink:#F2EEFF;--mut:#A89FCB;--v:#8B5CF6;--p:#F43F8E;--c:#22D3EE}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:17px/1.8 "Readex Pro",Tahoma,sans-serif;min-height:100vh;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px}
-
-.loader{position:fixed;inset:0;z-index:999;display:grid;place-items:center;background:var(--bg);transition:opacity .6s ease,visibility .6s ease}
-.loader.hide{opacity:0;visibility:hidden;pointer-events:none}
-.loader-mark{position:relative;display:grid;place-items:center;width:200px;height:200px;padding:24px}
-.loader-ring{position:absolute;inset:0;border-radius:50%;border:3px solid var(--line);border-top-color:var(--v);border-inline-end-color:var(--p);animation:spin 1.1s linear infinite}
-.loader-ring2{position:absolute;inset:16px;border-radius:50%;border:2px solid transparent;border-bottom-color:var(--c);animation:spin 1.8s linear infinite reverse}
-.loader-logo{font-weight:700;font-size:17px;line-height:1.5;text-align:center;background:linear-gradient(90deg,var(--v),var(--p),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.3px;white-space:nowrap}
-@keyframes spin{to{transform:rotate(360deg)}}
-@media(prefers-reduced-motion:reduce){.loader-ring,.loader-ring2{animation:none}}
-
-.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.s{position:absolute;animation:fl 9s ease-in-out infinite}
-.o1{width:380px;height:380px;border-radius:50%;background:var(--v);filter:blur(110px);opacity:.45;top:-80px;right:-100px}
-.o2{width:320px;height:320px;border-radius:50%;background:var(--p);filter:blur(110px);opacity:.3;bottom:-60px;left:-80px;animation-duration:12s}
-.o3{width:240px;height:240px;border-radius:50%;background:var(--c);filter:blur(100px);opacity:.18;top:45%;left:35%;animation-duration:14s}
-
-.bub{display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.3),rgba(139,92,246,.24) 60%,rgba(139,92,246,.1));border:1.5px solid rgba(255,255,255,.22);box-shadow:0 10px 40px rgba(139,92,246,.35),inset 0 0 22px rgba(255,255,255,.08);opacity:.9}
-.b1{width:86px;height:86px;font-size:40px;top:20%;left:7%;animation-duration:7s}
-.b2{width:70px;height:70px;font-size:32px;top:12%;right:10%;animation-duration:9s;animation-delay:-3s}
-.b3{width:92px;height:92px;font-size:42px;top:62%;right:6%;animation-duration:11s;animation-delay:-5s}
-.b4{width:72px;height:72px;font-size:33px;top:76%;left:14%;animation-duration:8s;animation-delay:-2s}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-34px)}}
-
-header{position:sticky;top:0;z-index:10;background:rgba(9,6,20,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.bar{max-width:1080px;margin:auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-weight:700;font-size:20px;background:linear-gradient(90deg,var(--v),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
-nav{display:flex;gap:6px;overflow-x:auto}
-nav a{padding:6px 14px;border-radius:99px;color:var(--mut);font-size:15px;white-space:nowrap;transition:.2s}
-nav a:hover{color:var(--ink)}
-nav a.on{background:var(--v);color:#fff}
-
-main{position:relative;z-index:1;max-width:1080px;margin:auto;padding:0 20px}
-.page{padding:70px 0 90px;animation:in .5s ease both}
-@keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-h1{font-size:clamp(34px,6vw,62px);line-height:1.3;margin-bottom:18px}
-h2{font-size:clamp(28px,4.5vw,40px);margin-bottom:10px}
-.g{background:linear-gradient(90deg,var(--v),var(--p),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{color:var(--mut);max-width:34em;margin-bottom:30px;font-weight:300;font-size:19px}
-.btn{display:inline-block;padding:13px 28px;border-radius:12px;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600;transition:.2s}
-.b1c{background:linear-gradient(90deg,var(--v),var(--p));color:#fff;box-shadow:0 10px 30px rgba(139,92,246,.4)}
-.b1c:hover{transform:translateY(-3px)}
-.b2c{border:2px solid var(--line);color:var(--ink);background:none}
-.b2c:hover{border-color:var(--c)}
-.b3c{background:#1877F2;color:#fff}
-.b3c:hover{transform:translateY(-3px)}
-.row{display:flex;gap:12px;flex-wrap:wrap}
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
-.chips span{padding:7px 16px;border:1px solid var(--line);border-radius:99px;background:var(--card);font-size:15px;color:var(--mut)}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:34px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.25s}
-.card:hover{transform:translateY(-8px);border-color:var(--v);box-shadow:0 18px 40px rgba(139,92,246,.25)}
-.ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:28px;margin-bottom:16px;background:linear-gradient(135deg,rgba(139,92,246,.35),rgba(244,63,142,.3))}
-.card h3{font-size:20px;margin-bottom:6px}
-.card p{color:var(--mut);font-size:16px}
-.work{padding:0;overflow:hidden}
-.work .txt{padding:22px 26px 26px}
-.thumb{height:180px;overflow:hidden;display:block}
-.thumb svg{width:100%;height:100%;display:block;transition:transform .5s}
-.work:hover .thumb svg{transform:scale(1.08)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:20px}
-.step b{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--v);margin-bottom:10px}
-
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.avatar{width:100%;max-width:340px;aspect-ratio:1;border-radius:30% 70% 60% 40%/40% 40% 60% 60%;overflow:hidden;margin:auto;border:4px solid var(--v);box-shadow:0 0 50px rgba(139,92,246,.5);animation:fl 8s ease-in-out infinite}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:57% 30%;transform:scale(1.7);transform-origin:57% 36%;display:block}
-.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.tags span{padding:6px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:15px}
-
-.num{display:block;direction:ltr;text-align:right;font-size:clamp(30px,6vw,46px);font-weight:700;margin:6px 0 22px}
-form{display:grid;gap:14px;max-width:520px;margin-top:26px}
-input,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
-input:focus,textarea:focus{outline:2px solid var(--v)}
-footer{position:relative;z-index:1;text-align:center;padding:22px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
-footer a{color:var(--c);margin:0 8px}
-footer a:hover{text-decoration:underline}
-@media(max-width:760px){
-  .about{grid-template-columns:1fr}.logo{font-size:17px}
-  .bub{width:54px!important;height:54px!important;font-size:25px!important}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #07152d;
+    color: white;
+    line-height: 1.8;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 18px;
+    background:
+    radial-gradient(circle at 50% 20%, #173968 0%, transparent 48%),
+    linear-gradient(145deg, #07152d, #10294c);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.logo {
+    width: 115px;
+    height: 115px;
+    border: 3px solid #f8bd32;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 62px;
+    color: #ffc53d;
+    background: #10294c;
+    box-shadow: 0 0 30px #e9a92145;
+}
+
+.brand {
+    font-size: 43px;
+    font-weight: bold;
+    color: #ffc53d;
+}
+
+.subtitle {
+    color: #d5dfed;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 20px;
+    border: 1px solid #eeb733;
+    border-radius: 30px;
+    color: #ffd36a;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #ffc53d;
+}
+
+.description {
+    color: #c6d2e3;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.service {
+    background: #142c4b;
+    border: 1px solid #284568;
+    padding: 17px 8px;
+    border-radius: 14px;
+    font-size: 15px;
+}
+
+.service .icon {
+    display: block;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.cta-title {
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.btn {
+    display: block;
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.whatsapp {
+    background: #20c66b;
+    color: white;
+    box-shadow: 0 5px 20px #20c66b35;
+}
+
+.call {
+    background: #ffc53d;
+    color: #10213c;
+    box-shadow: 0 5px 20px #ffc53d30;
+}
+
+.phone {
+    direction: ltr;
+    display: block;
+    margin-top: 22px;
+    color: #ffc53d;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.trust {
+    margin-top: 30px;
+    padding: 17px 10px;
+    border-top: 1px solid #304765;
+    color: #aebed1;
+    font-size: 13px;
+}
+
+footer {
+    color: #8294aa;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+@media(max-width:400px) {
+    h1 {font-size: 25px;}
+    .brand {font-size: 36px;}
+    .service {font-size: 13px;}
+}
 </style>
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;
+  var ttq=w[t]=w[t]||[];
+  ttq.methods=["page","track","identify","instances","debug",
+  "on","off","once","ready","alias","group","enableCookie",
+  "disableCookie","holdConsent","revokeConsent","grantConsent"];
+  ttq.setAndDefer=function(t,e){
+    t[e]=function(){
+      t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+    }
+  };
+  for(var i=0;i<ttq.methods.length;i++)
+    ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){
+    var e=ttq._i[t]||[];
+    for(var n=0;n<ttq.methods.length;n++)
+      ttq.setAndDefer(e,ttq.methods[n]);
+    return e
+  };
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{};
+    ttq._i[e]=[];
+    ttq._i[e]._u=r;
+    ttq._t=ttq._t||{};
+    ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};
+    ttq._o[e]=n||{};
+    var o=d.createElement("script");
+    o.type="text/javascript";
+    o.async=true;
+    o.src=r+"?sdkid="+e+"&lib="+t;
+    var a=d.getElementsByTagName("script")[0];
+    a.parentNode.insertBefore(o,a)
+  };
+
+  ttq.load('YOUR_PIXEL_ID');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
 </head>
+
 <body>
 
-<div class="loader" id="loader">
-  <div class="loader-mark">
-    <span class="loader-ring"></span>
-    <span class="loader-ring2"></span>
-    <span class="loader-logo">Sayed Mohamed</span>
-  </div>
+<section class="hero">
+<div class="container">
+
+<div class="logo">⚡</div>
+
+<div class="brand">فولت</div>
+<div class="subtitle">لصيانة كهرباء المنازل</div>
+
+<div class="tag">⚡ خدمات كهربائية منزلية</div>
+
+<h1>
+الكهرباء محتاجة فني محترف؟
+<br>
+<span>فولت معك لحل مشكلات الكهرباء</span>
+</h1>
+
+<p class="description">
+نقدم خدمات صيانة وإصلاح كهرباء المنازل،
+ونحرص على جودة العمل والاهتمام بأدق التفاصيل
+لتوفير الراحة والأمان لمنزلك.
+</p>
+
+<div class="services">
+
+<div class="service">
+<span class="icon">⚡</span>
+إصلاح الأعطال الكهربائية
 </div>
-<noscript><style>.loader{display:none}</style></noscript>
 
-<div class="bg" aria-hidden="true">
-  <div class="s o1"></div><div class="s o2"></div><div class="s o3"></div>
-  <div class="s bub b1">📈</div>
-  <div class="s bub b2">🎯</div>
-  <div class="s bub b3">💻</div>
-  <div class="s bub b4">🗂️</div>
+<div class="service">
+<span class="icon">🏠</span>
+صيانة كهرباء المنازل
 </div>
 
-<header><div class="bar">
-  <a class="logo" href="#home">Sayed Mohamed</a>
-  <nav>
-    <a href="#home">الرئيسية</a><a href="#services">خدماتي</a><a href="#work">أعمالي</a><a href="#about">عني</a><a href="#contact">تواصل</a>
-  </nav>
-</div></header>
+<div class="service">
+<span class="icon">💡</span>
+تركيب وإصلاح الإضاءة
+</div>
 
-<main>
-  <section class="page" id="home">
-    <h1>أنا Sayed Mohamed،<br><span class="g">وبوصّل نشاطك لعملاء حقيقيين</span></h1>
-    <p class="lead">ديجيتال ماركتنج، إعلانات ممولة، تصميم مواقع وأرشفة إلكترونية. كل اللي نشاطك محتاجه أونلاين عند شخص واحد.</p>
-    <div class="row">
-      <a class="btn b1c" href="https://wa.me/201093740921" target="_blank" rel="noopener">كلمني واتساب</a>
-      <a class="btn b2c" href="#work">شوف أعمالي</a>
-    </div>
-    <div class="chips"><span>📈 ديجيتال ماركتنج</span><span>🎯 إعلانات ممولة</span><span>💻 تصميم مواقع</span><span>🗂️ أرشفة إلكترونية</span></div>
-  </section>
+<div class="service">
+<span class="icon">🔌</span>
+صيانة الأفياش والمفاتيح
+</div>
 
-  <section class="page" id="services" hidden>
-    <h2>خدماتي</h2>
-    <p class="lead">أربع خدمات تكمل بعض، اطلب واحدة أو الباقة كلها.</p>
-    <div class="grid">
-      <article class="card"><div class="ic">📈</div><h3>ديجيتال ماركتنج</h3><p>خطة تسويق ومحتوى وإدارة صفحات السوشيال ميديا لنشاطك.</p></article>
-      <article class="card"><div class="ic">🎯</div><h3>إعلانات ممولة</h3><p>حملات على فيسبوك وإنستجرام وجوجل باستهداف دقيق وتقارير أداء.</p></article>
-      <article class="card"><div class="ic">💻</div><h3>تصميم المواقع</h3><p>مواقع وصفحات هبوط سريعة وشكلها احترافي وتشتغل على الموبايل.</p></article>
-      <article class="card"><div class="ic">🗂️</div><h3>الأرشفة الإلكترونية</h3><p>مسح وتصنيف وفهرسة المستندات لأرشيف منظم تلاقي فيه أي ملف بسرعة.</p></article>
-    </div>
-  </section>
+</div>
 
-  <section class="page" id="work" hidden>
-    <h2>أعمالي</h2>
-    <p class="lead">نماذج من الشغل. غيّر العناوين والوصف لمشاريعك الحقيقية.</p>
-    <div class="grid">
+<div class="cta-title">
+تواصل معنا الآن واطلب الخدمة
+</div>
 
-      <article class="card work">
-        <div class="thumb">
-          <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-label="لوحة نتائج حملة إعلانية">
-            <defs>
-              <linearGradient id="ga" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D28D9"/><stop offset="1" stop-color="#F43F8E"/></linearGradient>
-              <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE" stop-opacity=".45"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient>
-            </defs>
-            <rect width="300" height="180" fill="url(#ga)"/>
-            <rect x="22" y="20" width="256" height="140" rx="14" fill="#0D0824" fill-opacity=".78"/>
-            <rect x="38" y="34" width="70" height="7" rx="3.5" fill="#fff" fill-opacity=".7"/>
-            <rect x="38" y="48" width="44" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/>
-            <rect x="214" y="32" width="48" height="18" rx="9" fill="#22D3EE" fill-opacity=".25"/>
-            <rect x="222" y="38" width="32" height="6" rx="3" fill="#22D3EE"/>
-            <g fill="#8B5CF6" fill-opacity=".55">
-              <rect x="40" y="128" width="16" height="20" rx="3"/><rect x="66" y="118" width="16" height="30" rx="3"/>
-              <rect x="92" y="122" width="16" height="26" rx="3"/><rect x="118" y="106" width="16" height="42" rx="3"/>
-              <rect x="144" y="98" width="16" height="50" rx="3"/><rect x="170" y="86" width="16" height="62" rx="3"/>
-            </g>
-            <path d="M48 112 L74 100 L100 106 L126 86 L152 76 L178 62 L214 54 L240 44 L262 34" fill="none" stroke="#22D3EE" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="262" cy="34" r="6" fill="#F43F8E" stroke="#fff" stroke-width="2"/>
-            <circle cx="214" cy="54" r="3.5" fill="#fff"/><circle cx="126" cy="86" r="3.5" fill="#fff"/>
-          </svg>
-        </div>
-        <div class="txt"><h3>🎯 حملة إعلانية</h3><p>اكتب هنا اسم العميل والنتيجة اللي حققتها.</p></div>
-      </article>
+<div class="buttons">
 
-      <article class="card work">
-        <div class="thumb">
-          <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-label="تصميم موقع">
-            <defs>
-              <linearGradient id="gc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0891B2"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
-              <linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#F43F8E"/></linearGradient>
-            </defs>
-            <rect width="300" height="180" fill="url(#gc)"/>
-            <rect x="26" y="18" width="248" height="146" rx="12" fill="#0D0824" fill-opacity=".85"/>
-            <path d="M26 30a12 12 0 0 1 12-12h224a12 12 0 0 1 12 12v8H26z" fill="#1E1540"/>
-            <circle cx="42" cy="28" r="3.5" fill="#F43F8E"/><circle cx="54" cy="28" r="3.5" fill="#F59E0B"/><circle cx="66" cy="28" r="3.5" fill="#22D3EE"/>
-            <rect x="90" y="23" width="130" height="10" rx="5" fill="#fff" fill-opacity=".12"/>
-            <rect x="42" y="54" width="92" height="10" rx="5" fill="#fff"/>
-            <rect x="42" y="72" width="74" height="10" rx="5" fill="#22D3EE"/>
-            <rect x="42" y="90" width="100" height="5" rx="2.5" fill="#fff" fill-opacity=".35"/>
-            <rect x="42" y="100" width="82" height="5" rx="2.5" fill="#fff" fill-opacity=".35"/>
-            <rect x="42" y="114" width="46" height="16" rx="8" fill="url(#gd)"/>
-            <rect x="160" y="52" width="100" height="78" rx="10" fill="url(#gd)"/>
-            <circle cx="210" cy="82" r="14" fill="#fff" fill-opacity=".25"/>
-            <path d="M172 130l22-26 18 18 12-12 24 20z" fill="#fff" fill-opacity=".3"/>
-            <rect x="42" y="140" width="64" height="16" rx="5" fill="#fff" fill-opacity=".1"/>
-            <rect x="114" y="140" width="64" height="16" rx="5" fill="#fff" fill-opacity=".1"/>
-            <rect x="186" y="140" width="74" height="16" rx="5" fill="#fff" fill-opacity=".1"/>
-          </svg>
-        </div>
-        <div class="txt"><h3>💻 تصميم موقع</h3><p>اكتب هنا نوع الموقع واللينك بتاعه.</p></div>
-      </article>
+<a class="btn whatsapp"
+href="https://wa.me/966550718790?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1"
+onclick="ttq.track('Contact')">
+واتساب 💬
+</a>
 
-      <article class="card work">
-        <div class="thumb">
-          <svg viewBox="0 0 300 180" preserveAspectRatio="xMidYMid slice" aria-label="أرشفة إلكترونية">
-            <defs>
-              <linearGradient id="ge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F43F8E"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
-            </defs>
-            <rect width="300" height="180" fill="url(#ge)"/>
-            <g>
-              <rect x="52" y="38" width="76" height="92" rx="6" fill="#fff" fill-opacity=".92" transform="rotate(-8 90 84)"/>
-              <rect x="64" y="52" width="46" height="6" rx="3" fill="#8B5CF6" transform="rotate(-8 90 84)"/>
-              <rect x="64" y="66" width="52" height="4" rx="2" fill="#C4B5FD" transform="rotate(-8 90 84)"/>
-              <rect x="64" y="76" width="40" height="4" rx="2" fill="#C4B5FD" transform="rotate(-8 90 84)"/>
-              <rect x="112" y="30" width="76" height="92" rx="6" fill="#fff" transform="rotate(5 150 76)"/>
-              <rect x="124" y="44" width="46" height="6" rx="3" fill="#F43F8E" transform="rotate(5 150 76)"/>
-              <rect x="124" y="58" width="52" height="4" rx="2" fill="#FBCFE8" transform="rotate(5 150 76)"/>
-              <rect x="124" y="68" width="40" height="4" rx="2" fill="#FBCFE8" transform="rotate(5 150 76)"/>
-            </g>
-            <path d="M30 104a8 8 0 0 1 8-8h40l10 12h98a8 8 0 0 1 8 8v42a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8z" fill="#FDE68A"/>
-            <path d="M30 118a8 8 0 0 1 8-8h172a8 8 0 0 1 8 8v36a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8z" fill="#FBBF24"/>
-            <rect x="46" y="130" width="54" height="6" rx="3" fill="#fff" fill-opacity=".7"/>
-            <rect x="46" y="142" width="34" height="5" rx="2.5" fill="#fff" fill-opacity=".45"/>
-            <circle cx="232" cy="66" r="26" fill="#0D0824" fill-opacity=".25" stroke="#fff" stroke-width="7"/>
-            <line x1="251" y1="86" x2="272" y2="110" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
-            <path d="M220 66l9 9 15-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="txt"><h3>🗂️ مشروع أرشفة</h3><p>اكتب هنا حجم الأرشيف اللي نظمته.</p></div>
-      </article>
+<a class="btn call"
+href="tel:+966550718790"
+onclick="ttq.track('Contact')">
+اتصل بنا الآن ☎
+</a>
 
-    </div>
-  </section>
+</div>
 
-  <section class="page" id="about" hidden>
-    <div class="about">
-      <div>
-        <h2>مين Sayed Mohamed؟</h2>
-        <p class="lead">شغال في مجال الديجيتال ماركتنج والإعلانات الممولة وتصميم المواقع والأرشفة الإلكترونية. هدفي إن شغلك يتشاف ويجيب نتيجة، مع وضوح في السعر والمواعيد ومتابعة بعد التسليم.</p>
-        <div class="tags"><span>ماركتنج</span><span>إعلانات ممولة</span><span>تصميم مواقع</span><span>أرشفة</span></div>
-        <div class="steps">
-          <div class="step"><b>1</b><h3>نتكلم</h3></div>
-          <div class="step"><b>2</b><h3>أخطط</h3></div>
-          <div class="step"><b>3</b><h3>أنفذ</h3></div>
-          <div class="step"><b>4</b><h3>أسلّم وأتابع</h3></div>
-        </div>
-      </div>
-      <div class="avatar"><img src="sayed.png" alt="Sayed Mohamed"></div>
-    </div>
-  </section>
+<div class="phone">0550718790</div>
 
-  <section class="page" id="contact" hidden>
-    <h2>خلينا نبدأ شغلك</h2>
-    <p class="lead">اتصل أو ابعت رسالة وهرد عليك في أقرب وقت.</p>
-    <a class="num" href="tel:+201093740921">01093740921</a>
-    <div class="row">
-      <a class="btn b1c" href="https://wa.me/201093740921" target="_blank" rel="noopener">واتساب</a>
-      <a class="btn b2c" href="tel:+201093740921">اتصال مباشر</a>
-      <a class="btn b3c" href="https://www.facebook.com/share/19xP6aBqFV/" target="_blank" rel="noopener">فيسبوك</a>
-    </div>
-    <form id="f">
-      <input id="n" placeholder="اسمك" required>
-      <textarea id="m" rows="4" placeholder="محتاج إيه؟" required></textarea>
-      <button class="btn b1c" type="submit">ابعت على واتساب</button>
-    </form>
-  </section>
-</main>
+<div class="trust">
+✔ اهتمام بالجودة والأمان
+<br>
+✔ خدمات صيانة كهربائية منزلية
+<br>
+✔ تواصل مباشر وسهل
+</div>
 
 <footer>
-  © 2026 Sayed Mohamed. جميع الحقوق محفوظة
-  <br>
-  <a href="https://www.facebook.com/share/19xP6aBqFV/" target="_blank" rel="noopener">فيسبوك</a>
-  <a href="https://wa.me/201093740921" target="_blank" rel="noopener">واتساب</a>
+جميع الحقوق محفوظة © فولت للصيانة الكهربائية
 </footer>
 
-<script>
-const pages=['home','services','work','about','contact'];
-function route(){
-  let h=location.hash.slice(1); if(!pages.includes(h)) h='home';
-  pages.forEach(p=>document.getElementById(p).hidden=(p!==h));
-  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+h));
-  window.scrollTo(0,0);
-}
-addEventListener('hashchange',route); route();
-document.getElementById('f').addEventListener('submit',e=>{
-  e.preventDefault();
-  const t='أنا '+document.getElementById('n').value+': '+document.getElementById('m').value;
-  window.open('https://wa.me/201093740921?text='+encodeURIComponent(t),'_blank');
-});
+</div>
+</section>
 
-function hideLoader(){
-  const ld=document.getElementById('loader');
-  if(ld && !ld.dataset.hidden){
-    ld.dataset.hidden='1';
-    ld.classList.add('hide');
-    setTimeout(()=>ld.remove(),650);
-  }
-}
-setTimeout(hideLoader,3000);
-setTimeout(hideLoader,6000);
-</script>
 </body>
 </html>
